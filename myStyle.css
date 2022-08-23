@@ -1,11 +1,39 @@
 body {
-    background-color: #f0c7f4;
+    color: brown;
+    background-color:lightgrey;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-margin-right:15%;
+    font-size:1.15em;
+    /* font-style:italic; */
+margin-right:15%; 
 margin-left:15%;
+
 }
 
 h3 {
     background-color:lightsalmon;
     width: fit fit-content;
+    font-weight: 600;
+
+}
+
+em {
+   background-color:sienna; 
+   width: fit fit-content;
+   color:ghostwhite
+}
+
+a:link {
+    color:brown
+}
+
+a:visited {
+    color:blueviolet
+}
+
+a:hover {
+    color:coral
+}
+
+a:active {
+    color:darkmagenta
 }
