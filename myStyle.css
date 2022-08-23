@@ -22,6 +22,12 @@ em {
    color:ghostwhite
 }
 
+h4 {
+    font-style: italic;
+    background-color:aliceblue;
+    width: fit fit-content;
+}
+
 a:link {
     color:brown
 }
