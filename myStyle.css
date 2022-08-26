@@ -1,3 +1,6 @@
+* {
+    /* border: 0.1em dotted brown; */
+}
 body {
     color: brown;
     background-color:lightgrey;
@@ -9,23 +12,27 @@ margin-left:15%;
 
 }
 
+li {
+    margin-bottom: 6px;
+}
+
 h3 {
     background-color:lightsalmon;
-    width: fit fit-content;
+    width: fit-content;
     font-weight: 600;
 
 }
 
 em {
    background-color:sienna; 
-   width: fit fit-content;
+   width: fit-content;
    color:ghostwhite
 }
 
 h4 {
     font-style: italic;
     background-color:aliceblue;
-    width: fit fit-content;
+    width: fit-content;
 }
 
 a:link {
@@ -43,3 +50,58 @@ a:hover {
 a:active {
     color:darkmagenta
 }
+li ul li:hover {
+    font-size:150%;
+} /* unordered list inside of an ordered list will get 50% larger when hovered over*/
+
+span.academics {
+    font-weight:bolder;
+    font-size: 90%;
+    color: midnightblue;
+}
+
+ h2, h3 {/* group selectors */
+color:black
+}
+
+ li em { /* descendant selectors */
+    background-color: aliceblue;
+    width: fit-content;
+    color:darkcyan;
+}
+
+p.placementRobo, p.placementSci {
+    font-style:italic
+}
+
+img#theMountains {
+width:50%;
+}
+
+h3#freetime {
+    font-size:150%;
+    width: 360px;
+    text-align: left;    
+}
+
+div.draelos {
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+}
+img#header {
+    float: right;
+    margin: 1em;
+}
+
+div.flexible {
+    display:flex;
+    flex-direction: row;
+    text-align:center;
+    border: 2px solid coral;
+    /* justify-content: space-around; */
+    justify-content: space-evenly
+    
+}
+
