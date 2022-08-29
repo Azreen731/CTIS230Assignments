@@ -105,3 +105,16 @@ div.flexible {
     
 }
 
+/*media queries for responsive design */
+/*ask the browser to identify the properties of the media that the
+content is being displayed on and change the css rules accordingly */
+/*As long as the width of the viewport is less than 750px, implement
+whateve rules are present in this media query */ 
+@media (max-width:750px) {
+    body {
+        margin-left: 3%;
+        margin-right: 3%;
+        
+    }
+}
+
