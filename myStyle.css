@@ -104,6 +104,16 @@ div.flexible {
     justify-content: space-evenly
     
 }
+div#largeview {
+    position: fixed;
+    top: 100px;
+    left: 200px;
+
+}
+
+div.dontshow {
+    display:none;
+}
 
 /*media queries for responsive design */
 /*ask the browser to identify the properties of the media that the
@@ -112,9 +122,27 @@ content is being displayed on and change the css rules accordingly */
 whateve rules are present in this media query */ 
 @media (max-width:750px) {
     body {
-        margin-left: 3%;
-        margin-right: 3%;
-        
+        margin-left: 10%;
+        margin-right: 10%;    
+ 
     }
+}
+
+@media screen and (orientation: landscape) {
+    body {
+        font-size: .6em;
+       /*While testing this on my phone in landscape mode I realized that the font is altogether too large to read coherently without excessive scrolling so I tried to make it more manageable*/     
+    } 
+    
+}
+
+@media screen and (orientation: portrait) {
+ img#sky1 {
+        width: 50%;
+        /* In portrait mode for my phone the hobbies page, the image takes up too much space and everything else gets squished out*/
+    }
+    div.menu {
+        font-size: .6em;
+    }   
 }
 

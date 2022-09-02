@@ -57,6 +57,21 @@ function onButtonClick() {
     newtext = myinput.value;
     otheritem.innerHTML = newtext;
  }
+ mybigimage = document.getElementById("largeview");
+ image4 = document.getElementById("image4");
 
+//make something happen when we click on them
 
+image4.addEventListener("click",makeBigImage);
+mybigimage.addEventListener("click", hideBigImage);
+
+function makeBigImage() {
+    // first be sure that the largeview element has no leftover HTML
+    mybigimage.innerHTML = '';
+    //add an img element as a child of this largeview element
+    bigimage = document.createElement("img");
+    bigimage.src ="images/dead_sea.jpg";
+    mybigimage.appendChild(bigimage);
+    mybigimage.classList.remove("dontshow");
+}
 
